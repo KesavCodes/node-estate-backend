@@ -13,7 +13,7 @@ const getPosts = async (req, res) => {
         },
         type: query.type && query.type !== "any" ? query.type : undefined,
         property:
-          query.property && query.property !== "any" ? query.type : undefined,
+          query.property && query.property !== "any" ? query.property : undefined,
         bedroom: parseInt(query.bedroom) || undefined,
         price: {
           gte: parseInt(query.minPrice) || 0,
